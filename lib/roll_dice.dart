@@ -26,7 +26,7 @@ class _RollDiceState extends State<RollDice> {
         children: [
           Image.asset(
             'assets/img/dice-$currentValue.png',
-            width: 200,
+            width: 300,
           ),
           const SizedBox(
             height: 20,
@@ -37,7 +37,10 @@ class _RollDiceState extends State<RollDice> {
               foregroundColor: Colors.black,
               backgroundColor: Colors.yellowAccent,
             ),
-            child: const Text('Roll Dice'),
+            child: const Text(
+              'Roll Dice',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            ),
           ),
         ],
       ),
