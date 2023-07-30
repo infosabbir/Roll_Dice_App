@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:roll_dice/roll_dice.dart';
 
 Alignment startAlignment = Alignment.topLeft;
 Alignment endAlignment = Alignment.bottomRight;
@@ -19,6 +20,7 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
+      child: const RollDice(),
     );
   }
 }
